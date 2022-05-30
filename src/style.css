@@ -1,0 +1,21 @@
+
+.booklist {
+  width: 80%;
+  max-width: 1170px;
+  display: grid;
+  margin: 0 auto;
+  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+h3,
+h5 {
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0;
+}
+.bookPanel {
+  border: 1px solid #999;
+  padding: 10px;
+  text-align: center;
+  box-shadow: rgb(0 0 0 / 5%) 0px 6px 24px 0px, rgb(0 0 0 / 8%) 0px 0px 0px 1px;
+}
