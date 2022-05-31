@@ -23,7 +23,7 @@ export default function BookLibrary() {
         author={secondimg.autor}
         title={secondimg.title}
       />
-    </section>
+    </section> 
   );
 }
 
