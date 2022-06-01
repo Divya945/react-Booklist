@@ -29,7 +29,7 @@ export default function BookLibrary() {
 const Book = ( { img, title, author }) => {
   // attributes,evenhandelr , onclick, onmousehover
   return (
-    <articel className="bookPanel">
+    <articel className="bookPanel" >
       <img src={img} alt="" />
       <h3>{title}</h3>
       <p>{author} </p>
