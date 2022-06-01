@@ -18,16 +18,16 @@ const books = [
 export default function BookLibrary() {
   return (
     <section className="booklist">
-      {books.map((book) => {
-        const { img, title, author } = book;
-        return <Books book={book}></Books>;
+      {books.map((book,values) => {
+        //const { img, title, author } = book;
+        return <Book key={book.id} {...book}></Book>;
       })}
     </section>
   );
 }
 
-const Books = (props) => {
-  const { img, title, author } = props.book;
+const Book = ( { img, title, author }) => {
+  // attributes,evenhandelr , onclick, onmousehover
   return (
     <articel className="bookPanel">
       <img src={img} alt="" />
