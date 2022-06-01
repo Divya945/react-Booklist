@@ -31,6 +31,10 @@ const data = [
 
 const UsestateArray = () => {
   const [people, setPeople] = useState(data);
+  const removename = (id) => {
+    let nameId = people.filter((persons) => persons.id !== id);
+    setPeople(nameId);
+  };
   return (
     <div>
       <h1>use state array example</h1>
@@ -40,11 +44,14 @@ const UsestateArray = () => {
         return (
           <div key={id}>
             <h2>
-              {id}. {Name}
-            </h2>
+              <span>{id}.</span>
+              {Name}
+            </h2>{' '}
+            <span onClick={() => removename(id)}>remove</span>
           </div>
         );
       })}
+      <button onClick={() => setPeople([])}> clear all</button>
     </div>
   );
 };
